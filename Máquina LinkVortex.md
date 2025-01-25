@@ -60,6 +60,10 @@ Hice cat al archivo 'Dockerfile.ghost' para ver si tenía algo interesante, nomb
 
 ![docker](https://github.com/user-attachments/assets/dd1c963d-c23c-4c7c-9032-acc023fcf717)
 
+
+![usua](https://github.com/user-attachments/assets/96297677-7930-4f35-9260-14316d69f780)
+
+
 Probamos en http://linkvortex.htb/ghost/#/signin con el usuario que hemos visto antes 'admin', pero como debemos introducir un e-mail, probaremos a usar el e-mail admin@linkvortex.htb
 
 ![acceso](https://github.com/user-attachments/assets/1b5fbd7e-f631-4272-8812-13490035c95d)
