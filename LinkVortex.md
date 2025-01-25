@@ -15,7 +15,10 @@ Una vez editado ya tenía acceso a la web http://linkvortex.htb/.
 Accedí para hacer unos tests rápidos de vulnerabilidades. 
 
 
-Miré el código fuente, las dev tools y pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' el cuál me redirigía a un panel de login, probé con credenciales predeterminadas pero no funcionó,
+Miré el código fuente, las dev tools y pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' y así era. 
+
+
+Me redirigió a un panel de login, probé con credenciales predeterminadas pero no funcionó,
 así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos dos, puerto 22 para SSH y puerto 80 para Apache httpd web.
 
 ![nmap](https://github.com/user-attachments/assets/183b2339-79ed-4d44-a400-befc5ccc6c94)
@@ -37,6 +40,8 @@ Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permi
 
 
 Descargué dos carpetas porque en una quiero restaurar los cambios que haya podido haber anteriormente y en la otra por si hubiera información faltante que pueda ayudarme.
+
+
 
 `git restore .` Restaura todos los archivos anteriores y modificaciones que haya habido siempre que estés en el work tree directory.
 
@@ -80,6 +85,7 @@ LinEnum nos da unos directorios que pueden ser manipulados.
 
 Podría escalar privilegios ya que me permite ejecutar como sudo comandos en los dos directorios que he visto antes siempre que use la extensión .png y el parámetro CHECK_CONTENT=true para que me permita hacer cat
 al archivo donde no tenga permisos.
+
 
 
 `bob@linkvortex:~$ ln -s /root/root.txt yuju.txt
