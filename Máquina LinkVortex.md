@@ -21,7 +21,8 @@ así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos 
 Continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber
 
 
-[dirseach](https://github.com/user-attachments/assets/b30a634c-11f1-4968-b4eb-19d6248ac447)
+![dirseach](https://github.com/user-attachments/assets/82a15e61-54d2-47da-88fb-2abf8c79f4c5)
+
 
 
 
