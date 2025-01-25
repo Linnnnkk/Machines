@@ -61,7 +61,10 @@ Probamos en http://linkvortex.htb/ghost/#/signin con el usuario que hemos visto 
 ![acceso](https://github.com/user-attachments/assets/1b5fbd7e-f631-4272-8812-13490035c95d)
 
 
-Al ser la versión 5.58 de GhostCMS es vulnerable al CVE-2024-40028, que permite a usuarios logeados subir archivos symlink con los que se puede ejecutar un Arbitrary File Read que saque información sensible archivos del sistema operativo del servidor en github encontramos un script que nos sirve. 
+Al ser la versión 5.58 de GhostCMS es vulnerable al CVE-2024-40028, que permite a usuarios logeados subir archivos symlink con los que se puede ejecutar un Arbitrary File Read que saque información sensible archivos del sistema operativo del servidor.
+
+
+En github encontramos un script que nos sirve. 
 
 ![etc](https://github.com/user-attachments/assets/4fa73557-9983-4205-bdc7-6a23deeab235)
 
