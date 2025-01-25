@@ -37,16 +37,14 @@ Enumeración subdominios con wfuzz
 Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción. 
 
 
-Procedí a una enumeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto. que descargué con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
+Procedí a una enumeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto que descargué con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
 
 ![git](https://github.com/user-attachments/assets/9c559044-fd09-44e4-bbe2-8b1ba7dd1b30)
 
 
-Descargué dos carpetas porque en una quiero restaurar los cambios que haya podido haber anteriormente y en la otra por si hubiera información faltante que pueda ayudarme.
 
 
-
-`git restore .` Restaura todos los archivos anteriores y modificaciones que haya habido siempre que estés en el work tree directory.
+Con `git restore .` restauro todos los archivos anteriores y modificaciones que haya habido siempre que estés en el work tree directory.
 
 ![restore](https://github.com/user-attachments/assets/c62b27bf-3514-45c5-aa9f-5d3243976204)
 
