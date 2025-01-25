@@ -37,7 +37,7 @@ Enumeración subdominios con wfuzz
 Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción. 
 
 
-Procedí a una numeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto. que descargué con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
+Procedí a una enumeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto. que descargué con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
 
 ![git](https://github.com/user-attachments/assets/9c559044-fd09-44e4-bbe2-8b1ba7dd1b30)
 
