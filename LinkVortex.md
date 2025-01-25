@@ -92,31 +92,31 @@ al archivo donde no tenga permisos.
 
 
 
-bob@linkvortex:~$ ln -s /root/root.txt yuju.txt
+`bob@linkvortex:~$ ln -s /root/root.txt yuju.txt`
 
 
-bob@linkvortex:~$ ls
+`bob@linkvortex:~$ ls`
 
 
-LinEnum.sh  user.txt  yuju.txt
+`LinEnum.sh  user.txt  yuju.txt`
 
 
-bob@linkvortex:~$ ln -s /home/bob/yuju.txt yuju.png
+`bob@linkvortex:~$ ln -s /home/bob/yuju.txt yuju.png`
 
 
-bob@linkvortex:~$ ls
+`bob@linkvortex:~$ ls`
 
 
-LinEnum.sh  user.txt  yuju.png  yuju.txt
+`LinEnum.sh  user.txt  yuju.png  yuju.txt`
 
 
-bob@linkvortex:~$ sudo CHECK_CONTENT=true /usr/bin/bash /opt/ghost/clean_symlink.sh /home/bob/yuju.png
+`bob@linkvortex:~$ sudo CHECK_CONTENT=true /usr/bin/bash /opt/ghost/clean_symlink.sh /home/bob/yuju.png`
 
 
-Link found [ /home/bob/yuju.png ] , moving it to quarantine
+`Link found [ /home/bob/yuju.png ] , moving it to quarantine`
 
 
-Content:
+`Content:`
 
 
 
