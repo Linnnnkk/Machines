@@ -20,7 +20,10 @@ así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos 
 
 Continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber
 
+
 [dirseach](https://github.com/user-attachments/assets/b30a634c-11f1-4968-b4eb-19d6248ac447)
+
+
 
 Solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me dirigí a enumerar subdominios.
 
