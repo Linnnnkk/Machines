@@ -34,7 +34,10 @@ Enumeración subdominios con wfuzz
 
 ![subdomain](https://github.com/user-attachments/assets/046f2fce-7e5a-4f92-9254-f4de52b8a8cf)
 
-Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción. Procedí a una numeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto. Los directorios .git abiertos pueden ser descargados de manera remota con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
+Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción. 
+
+
+Procedí a una numeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto. que descargué con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
 
 ![git](https://github.com/user-attachments/assets/9c559044-fd09-44e4-bbe2-8b1ba7dd1b30)
 
