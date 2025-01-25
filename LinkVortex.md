@@ -18,29 +18,11 @@ así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos 
 ![nmap](https://github.com/user-attachments/assets/183b2339-79ed-4d44-a400-befc5ccc6c94)
 
 
-Continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber
+Continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me dirigí a enumerar subdominios
 
 
 ![dirseach](https://github.com/user-attachments/assets/82a15e61-54d2-47da-88fb-2abf8c79f4c5)
 
-
-
-
-Solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me dirigí a enumerar subdominios.
-
-
- `{
-  "keys": [
-    {
-      "e": "AQAB",
-      "kid": "0fWYMUHmh_awzS--ldm-OS-ecbdYWrVKd-7TTjj-kfk",
-      "kty": "RSA",
-      "n": "nui6u1jo3tg4Sb7aQHATpJwYwYfSdOP-OyK3mmWDX7owdjukqiimb4obqdhFKm-_ERzDWVQ3e5-QzwcRCSkftGLOCOJcM36lwNrS_iUekdUrKpVYDWaeM-zgDMmmBbAtIn_NoDxQz_JmromMDpr2oOVCMQN2Vca0Ba0fsHXRax8",
-      "use": "sig"
-    }
-  ]
-}
-`
 
 Enumeración subdominios con wfuzz
 
