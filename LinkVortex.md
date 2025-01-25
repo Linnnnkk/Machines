@@ -12,13 +12,16 @@ Con lo que edité el archivo /etc/hosts para poder acceder a la página web.
 
 Una vez editado ya tenía acceso a la web http://linkvortex.htb/. 
 
-Accedí para hacer unos tests rápidos de vulnerabilidades y miré el código fuente, las dev tools y pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' el cuál me redirigía a un panel de login, probé con credenciales predeterminadas pero no funcionaron,!
+Accedí para hacer unos tests rápidos de vulnerabilidades. 
+
+
+Miré el código fuente, las dev tools y pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' el cuál me redirigía a un panel de login, probé con credenciales predeterminadas pero no funcionó,
 así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos dos, puerto 22 para SSH y puerto 80 para Apache httpd web.
 
 ![nmap](https://github.com/user-attachments/assets/183b2339-79ed-4d44-a400-befc5ccc6c94)
 
 
-Continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me dirigí a enumerar subdominios
+Continué enumerando directorios con dirsearch, primero usé la URL http://linkvortex.htb/ y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me dirigí a enumerar subdominios
 
 
 ![dirseach](https://github.com/user-attachments/assets/82a15e61-54d2-47da-88fb-2abf8c79f4c5)
