@@ -10,13 +10,15 @@ Con lo que edité el archivo /etc/hosts para poder acceder a la página web.
 
 ![edthosts](https://github.com/user-attachments/assets/2f37e39d-6049-4b61-a932-7d12a4db9771)
 
-Una vez editado ya tenía acceso a la web http://linkvortex.htb/. Accedí para hacer unos tests rápidos de vulnerabilidades y miré el código fuente, las dev tools y pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' el cuál me redirigía a un panel de login, probé con credenciales predeterminadas pero no funcionaron,!
- así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos dos, puerto 22 para SSH y puerto 80 para Apache httpd web.
+Una vez editado ya tenía acceso a la web http://linkvortex.htb/. 
+
+Accedí para hacer unos tests rápidos de vulnerabilidades y miré el código fuente, las dev tools y pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' el cuál me redirigía a un panel de login, probé con credenciales predeterminadas pero no funcionaron,!
+así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos dos, puerto 22 para SSH y puerto 80 para Apache httpd web.
 
 ![nmap](https://github.com/user-attachments/assets/183b2339-79ed-4d44-a400-befc5ccc6c94)
 
 
-No encontré nada más que fuera interesante y continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber
+Continué enumerando directorios con dirsearch, primero usé la URL default y encontré directorios como /rss/ /robots.txt /sitemap.xml los cuáles me confirmaron que la página usaba el directorio /ghost así que enumeré los posibles directorios que pudiera haber
 
 [dirseach](https://github.com/user-attachments/assets/b30a634c-11f1-4968-b4eb-19d6248ac447)
 
