@@ -1,6 +1,8 @@
 
 # LinkVortex.htb
-Máquina Easy LinkVortex.
+Máquina: LinkVortex 
+OS : Linux
+Dificultad : Easy
 
 Obtenemos la ip 10.10.11.47, hice un Whatweb por si esa ip se redirigía a una web, y efectivamente así era, nos llevaba a la página http://linkvortex.htb/ y nos dió más información sobre el servidor.
 
