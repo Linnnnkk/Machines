@@ -43,7 +43,13 @@ Enumeración subdominios con wfuzz
 ![subdomain](https://github.com/user-attachments/assets/046f2fce-7e5a-4f92-9254-f4de52b8a8cf)
 
 
-Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción. 
+Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción.
+
+
+
+![construccionn](https://github.com/user-attachments/assets/ad3cdde3-bac0-4557-b799-c8e6f45a630a)
+
+
 
 
 
@@ -59,7 +65,7 @@ Con `git restore .` restauro todos los archivos anteriores y modificaciones que 
 
 ![restore](https://github.com/user-attachments/assets/c62b27bf-3514-45c5-aa9f-5d3243976204)
 
-Hice cat al archivo 'Dockerfile.ghost' para ver si tenía algo interesante, nombra un archivo 'config.production.json' pero no pude obtener nada más con lo que me puse a buscar archivos con ese nombre o que tuviera palabras clave, 'users', 'password', 'login', 'credentials', 'auhentication', 'db', etc. encontrando un archivo interesante en archivo en /dev.linkvortex.htb/ghost/core/test/regression/api/admin/authentication.test.js en el que se observa lo que parece ser una contraseña expuesta. 
+Hice cat al archivo 'Dockerfile.ghost' para ver si tenía algo interesante, nombra un archivo 'config.production.json' pero no pude obtener nada más con lo que me puse a buscar archivos con ese nombre o que tuviera palabras clave, 'users', 'password', 'login', 'credentials', 'auhentication', 'db', etc, encontrando un archivo interesante en /dev.linkvortex.htb/ghost/core/test/regression/api/admin/authentication.test.js, en el que podemos ver lo que parece ser una contraseña expuesta. 
 
 ![docker](https://github.com/user-attachments/assets/dd1c963d-c23c-4c7c-9032-acc023fcf717)
 
