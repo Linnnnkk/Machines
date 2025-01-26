@@ -2,7 +2,7 @@
 # LinkVortex.htb
 Máquina: LinkVortex        OS : Linux       Dificultad : Easy
 
-Obtenemos la ip 10.10.11.47, la analicé con Whatweb por si se redirigía a una web, y efectivamente nos llevaba a la página http://linkvortex.htb/.
+Obtenemos la ip 10.10.11.47, la analicé con Whatweb por si hubiera alguna redirección a un servidor web, y efectivamente nos llevaba a la página http://linkvortex.htb/.
 
 ![whatweb](https://github.com/user-attachments/assets/0f64f3ec-0638-4b8b-9041-72c20da13ed8)
 
