@@ -35,7 +35,7 @@ Seguidamente continué enumerando directorios con dirsearch, primero utilicé ht
 ![dirseach](https://github.com/user-attachments/assets/82a15e61-54d2-47da-88fb-2abf8c79f4c5)
 
 
-Enumeré los posibles directorios que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que seguí con la enumeración de subdominios.
+Enumeré los posibles directorios /ghost/ que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que seguí con la enumeración de subdominios.
 
 
 Enumeración subdominios con wfuzz
