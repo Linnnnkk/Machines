@@ -13,29 +13,42 @@ Con lo que edité el archivo /etc/hosts para poder acceder a la página web.
 Una vez editado ya tenía acceso a la web http://linkvortex.htb/. 
 
 
-Al realizar un escaneo visual, pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, lo normal es que hubiera directorios en el enlace 'web/ghost/' y así era. 
+Al realizar un escaneo visual, pude encontrar un nombre de usuario llamado 'admin', sabiendo que estoy en una GhostCMS, podríamos deducir que existen directorios en el enlace 'linkvortex.htb/ghost/' y así era. 
 
 
-De manera predeterminada solo con añadir el directorio /ghost/ me redirigió a un panel de login, probé con credenciales predeterminadas pero no funcionó,
-así que procedí a usar nmap para ver que puertos tenía abiertos. Encontramos dos, puerto 22 para SSH y puerto 80 para Apache httpd web.
+
+De manera predeterminada solo con añadir el directorio /ghost/ me redirigió a un panel de login, probé con credenciales predeterminadas pero no funcionó.
+
+
+![login](https://github.com/user-attachments/assets/6c10b61f-ac88-406e-9768-edfa6b01620b)
+
+
+
+Procedí a usar nmap para ver que puertos tenía abiertos. Encontramos dos, puerto 22 para SSH y puerto 80 para Apache httpd web.
 
 ![nmap](https://github.com/user-attachments/assets/183b2339-79ed-4d44-a400-befc5ccc6c94)
 
 
-Seguidamente continué enumerando directorios con dirsearch, primero utilicé http://linkvortex.htb/ para el escaneo y encontré directorios como /rss/, /robots.txt, /sitemap.xml, que eran accesibles y que mostraban información sobre que la página efectivamente usaba el directorio /ghost/ así que enumeré los posibles directorios que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me dirigí a enumerar subdominios
+Seguidamente continué enumerando directorios con dirsearch, primero utilicé http://linkvortex.htb/ para el escaneo y encontré directorios como /rss/, /robots.txt, /sitemap.xml, que eran accesibles y mostraban información sobre que la página efectivamente hace uso del directorio /ghost/.
 
 
 ![dirseach](https://github.com/user-attachments/assets/82a15e61-54d2-47da-88fb-2abf8c79f4c5)
+
+
+Enumeré los posibles directorios que pudiera haber, pero solo me enumeró uno y fue una clave púlica RSA http://linkvortex.htb/ghost/.well-known/jwks.json con la que no obtuve mucha información significativa, así que me seguí con la enumeración de subdominios.
 
 
 Enumeración subdominios con wfuzz
 
 ![subdomain](https://github.com/user-attachments/assets/046f2fce-7e5a-4f92-9254-f4de52b8a8cf)
 
+
 Accedí al subdominio dev.linkvortex.htb modificando el archivo hosts para permitirme el acceso y encontré lo que parecía ser una web en construcción. 
 
 
+
 Procedí a una enumeración de directorios con dirsearch de nuevo y encontré un directorio .git abierto que descargué con `wget --mirror -I .git http://dev.linkvortex.htb/.git/`
+
 
 ![git](https://github.com/user-attachments/assets/9c559044-fd09-44e4-bbe2-8b1ba7dd1b30)
 
