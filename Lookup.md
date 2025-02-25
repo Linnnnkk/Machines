@@ -50,7 +50,7 @@
 ![Screenshot_2025-02-25_13_34_33](https://github.com/user-attachments/assets/86292338-fcb6-495f-b1c1-a2794eb354aa)
 
 
-### Abriremos un servidor en python para descargar linpeas remotamente y al finalizar el escaneo me llama la atención un directorio que no reconoce linpeas con lo que podríamos deducir que es un directorio que no está por default en Linux /usr/sbin/pwm. Al iniciarlo ejecuta el comando 'id' para exrae el nombre de usuaio y el ID. Con lo que podríamos hacer PATH Hijacking donde podemos ejecutar 'id' sin especificar la ruta ejecutando la primera coincidencia que exista.
+### Abriremos un servidor en python para descargar linpeas remotamente y al finalizar el escaneo lo más interesante que encuentro es un directorio que no reconoce linpeas con lo que podríamos deducir que es un directorio que no está por default en Linux /usr/sbin/pwm. Al iniciarlo ejecuta el comando 'id' para exrae el nombre de usuaio y el ID. Con lo que podríamos hacer PATH Hijacking donde podemos ejecutar 'id' sin especificar la ruta ejecutando la primera coincidencia que exista.
 
 ![Screenshot_2025-02-25_14_03_16](https://github.com/user-attachments/assets/cb28ac79-10b9-46d3-8a55-21c4ee6c7376)
 
