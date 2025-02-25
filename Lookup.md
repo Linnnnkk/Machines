@@ -20,8 +20,7 @@
 ![Screenshot_2025-02-25_12_27_03](https://github.com/user-attachments/assets/0c5f93e5-1d42-44e5-a813-6cd8d943c46a)
 
 
-### Podemos observar que el login está mal configurado ya que cuando acertamos un usuario solo nos dice que la contraseña es incorrecta. En este caso nos ha servido con admin. Procedemos a enumerar usuarios con un script hecho en python teniendo en cuenta que al
-acertar un usuario nos dará error solo en la contraseña
+### Podemos observar que el login está mal configurado ya que cuando acertamos un usuario solo nos dice que la contraseña es incorrecta. En este caso nos ha servido con admin. Procedemos a enumerar usuarios con un script hecho en python teniendo en cuenta que al acertar un usuario nos dará error solo en la contraseña
 
 
 ![Screenshot_2025-02-25_12_53_24](https://github.com/user-attachments/assets/2eb516ac-a4a4-4b7a-bdf9-0f99d62ed078)
