@@ -33,8 +33,7 @@
 
 
 
-### De primeras no podemos acceder porque redirecciona a un subdominio con lo cual modificamos el archivo hosts y ya tendríamos acceso a él y encontramos lo que parece un sistema de gestión de archivos, buscando el entorno en el que me encuentro, veo que es elFinder v2.1.47,
-vulnerable a CVE-2019-9194, encontré un script en github que me ayudó en el proceso. https://github.com/hadrian3689/elFinder_2.1.47_php_connector_rce
+### De primeras no podemos acceder porque redirecciona a un subdominio con lo cual modificamos el archivo hosts y ya tendríamos acceso a él y encontramos lo que parece un sistema de gestión de archivos, buscando el entorno en el que me encuentro, veo que es elFinder v2.1.47, vulnerable a CVE-2019-9194, encontré un script en github que me ayudó en el proceso. https://github.com/hadrian3689/elFinder_2.1.47_php_connector_rce
 
 
 ![Screenshot_2025-02-25_13_14_22](https://github.com/user-attachments/assets/a788a063-58c0-4ce0-9558-ec289e30fb55)
