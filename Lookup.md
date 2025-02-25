@@ -1,5 +1,5 @@
-#Máquina : Lookup
-#Dificultad : Easy
+# Máquina : Lookup
+# Dificultad : Easy
 
 ### Nmap scan
 
