@@ -77,7 +77,7 @@ Al no tener ningún problema en subir el archivo, solo nos faltaría encontrar e
 
 
 
-Obteniendo un resultado positivo, procedemos a abrir la shell y probar si funciona.
+Obteniendo un resultado positivo, procedemos a abrir el archivo y probar si funciona.
 
 ![5 1 2](https://github.com/user-attachments/assets/ad891c30-fd2b-4d39-a374-1773ad0debdf)
 
