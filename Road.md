@@ -11,11 +11,13 @@ Vemos que tiene el puesto 80 abierto con lo que accedemos a la web en busca de i
 ![3](https://github.com/user-attachments/assets/68870778-bfe0-42c5-a1db-e1de1b4d2ec6)
 
 
+Al hacer fuzzing web, encontramos con lo que parece ser un panel de login de administración, que, además, nos deja registrarnos.
+
 ![2](https://github.com/user-attachments/assets/450072ee-ad4b-4b2b-a144-7ba1d8e35dfb)
 
 
 
-Al hacer fuzzing web, encontramos con lo que parece ser un panel de login de administración, que, además, nos deja registrarnos.
+
 
 ![4](https://github.com/user-attachments/assets/29baa32d-92df-4828-9889-243aa00b3742)
 
