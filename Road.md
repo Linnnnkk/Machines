@@ -29,7 +29,7 @@ Al hacer fuzzing web, encontramos con lo que parece ser un panel de login de adm
 
 
 
-Una vez registrados podemos tener acceso al dashboard, donde lo único interesante es que podemos subir un archivo de iamgen de perfil, pero solo puede el administrador admin@sky.thm, también podemos interactuar con el ResetPassword.
+Una vez registrados podemos tener acceso al dashboard, donde lo único interesante es que podemos subir un archivo de imagen de perfil, pero solo puede el administrador admin@sky.thm, también podemos interactuar con el ResetPassword.
 
 ![5 2](https://github.com/user-attachments/assets/ecd9ac3d-be5d-49c0-9a7b-91c2c3fac94c)
 
