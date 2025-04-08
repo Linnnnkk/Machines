@@ -141,7 +141,7 @@ Usamos la contraseña vista antes para el usuario webdeveloper y conseguimos cam
 
 El usuario webdeveloper tiene permisos para ejecutar el comando /usr/bin/sky_backup_utility con sudo sin necesidad de contraseña. Además, la variable de entorno LD_PRELOAD estaba permitida, lo que facilita la carga de bibliotecas compartidas personalizadas.
 
-Se creó un archivo C que define una función constructor que cambia el UID y GID al usuario root y ejecuta una shell de root.
+Creamos un archivo C que define una función constructor que cambia el UID y GID al usuario root y ejecuta una shell de root.
 
 ![escalada1](https://github.com/user-attachments/assets/132f8d75-7c6c-4197-8621-1b4674151a8f)
 
