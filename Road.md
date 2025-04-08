@@ -6,7 +6,7 @@ Escaneo con nmap
 
 
 
-Vemos que tiene el puesto 80 abierto con lo que accedemos a la web en busca de información
+Vemos que tiene el puerto 80 abierto con lo que accedemos a la web en busca de información
 
 ![3](https://github.com/user-attachments/assets/68870778-bfe0-42c5-a1db-e1de1b4d2ec6)
 
