@@ -108,12 +108,24 @@ las credenciales correctas, hemos pasado a ser el usuario Orka
 
 ## Escalada de privilegios
 
-Encontramos que podemos ejecutar como root un archivo llamado "bitcoin", al probar, nos pide una contraseña, podemos llevar el binario "bitcoin" a nuestra máquina y probar si con ghydra obtenemos algo interesante
+Encontramos que podemos ejecutar como root un archivo llamado "bitcoin", al probar, nos pide una contraseña, podemos llevar el binario "bitcoin" a nuestra máquina y probar si con ghidra obtenemos algo interesante. También encuentro algo extraño en el sistema de archivos,
+porque en /usr/sbin/ tenemos permisos de escritura.
 
 ![34](https://github.com/user-attachments/assets/6375fb2c-a16e-4ef1-858c-23e4845c4ed1)
 
-En ghydra aparece la contraseña
+![35](https://github.com/user-attachments/assets/7d4927c0-7924-4891-8d7e-eec786f343e0)
+
+En ghidra aparece la contraseña
 
 ![ghydra](https://github.com/user-attachments/assets/2b2ebe2d-02ef-4ef6-a5ef-84ebdb3214ed)
+
+Podemos crear un binario fake llamado python porque el transfer.py no está usando la ruta absolutad si no solamente "python", y viendo que donde primeramente busca es en /usr/sbin/ (justo dodnde tenemos permisos de escritura podemos crear nuestro binario llamado
+python y modificarlo para que nos de una shell como root.
+
+![36](https://github.com/user-attachments/assets/4b35ac6d-3733-4f0d-883a-15df084cf1cf)
+
+Finalmene conseguimos acceso root
+
+![37](https://github.com/user-attachments/assets/0c43f49c-697e-4e4a-ba46-f225edeb00c5)
 
 
