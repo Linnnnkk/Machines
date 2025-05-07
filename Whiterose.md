@@ -59,11 +59,11 @@ Al hacer sudo -l vemos que tenemos permisos de ejecución como root en sudoedit,
 
 ![19](https://github.com/user-attachments/assets/c4b8ad25-091a-44dd-ab9e-d6ec3d103b69)
 
-Ahora en teoría ejecutando el sudoedit en la ruta donde nos deja ejecutarlo, nos ebería de abrir el archivo /etc/passwd
+Ahora en teoría ejecutando el sudoedit en la ruta donde nos deja ejecutarlo, nos debería de abrir el archivo /etc/passwd
 
 ![20](https://github.com/user-attachments/assets/d9efc213-8552-42d2-8042-94fb5587e170)
 
-Obetenemos el hash de root, así que ya podríamos entrar como root, en mi caso al ser una CTF y sé que la flag va a estar en /root/root.txt voy a modificar el comando para que haga lo mismo solo que en vez de leer /etc/passwd va a leer /root/root.txt
+Obtenemos el hash de root, así que ya podríamos entrar como root, en mi caso al ser una CTF y sé que la flag va a estar en /root/root.txt voy a modificar el comando para que haga lo mismo solo que en vez de leer /etc/passwd va a leer /root/root.txt
 
 ![21](https://github.com/user-attachments/assets/1a81fa5c-bcef-4f2a-a378-adf942a849e1)
 
