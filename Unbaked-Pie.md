@@ -68,10 +68,6 @@ Al usar `sudo -l` vemos que tenemos acceso como 'oliver' a un archivo localizado
 
 ![19](https://github.com/user-attachments/assets/fd5e4f87-7fdd-445d-b08d-dd29f8deb124)
 
-Al observarlo vemos que el código tal y como está escrito es vulnerable. En la parte del (input) podrías intentar ver si somos capaces de ejecutar comandos.
-
-![20](https://github.com/user-attachments/assets/ee37bc5b-0f1e-48a8-a4aa-ac255fb13b82)
-
 Creamos una imagen 'shell.png' en la que pondremos `os.system('/bin/bash')` y la descargaremos a través de wget al directorio /home/ramsey, una vez dentro cambiaremos el nombre a payload.png y ejecutaremos el script usando `sudo -u oliver /usr/bin/python /home/ramsey/vuln.py`
 
 ![21](https://github.com/user-attachments/assets/4d823ccf-fe0d-4af8-8735-2ad35fcde673)
