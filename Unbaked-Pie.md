@@ -88,6 +88,7 @@ client = docker.from_env()
 client.containers.run("python-django:latest", "sleep infinity", detach=True)
 ```
 
+
 Modificamos el archivo y damos permisos a /bin/bash para acceder como root y el root.txt
 
 ![23](https://github.com/user-attachments/assets/a6d0ae95-e34e-4431-8774-d1e0b980fa09)
